@@ -1,22 +1,15 @@
 #include <stdio.h>
-
 int main()
 {
-    unsigned int a =1, b=0;
-    while (a>0)
+    unsigned int a =1;
+    int b=0;
+    while (a!=0)
     {
-        a++;
+    a=a<<1;
+    b=b+1;
     }
-    printf ("unsigned int数据类型最大数是:%u\n",a-1);
-
-    unsigned int n =a-1;
-    do
-    {
-        n=n/10;
-        b++;
-    } while (n>0);
-    printf ("unsigned int数据类型最大数共有%d位.\n",b);
-
+    printf ("the amount is %d\n",b);
+    printf ("the max is %u\n",a-1);
     return 0;
     
 }
